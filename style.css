@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@400;500&display=swap");
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f2f0;
+  font-size: 1.6rem;
+  padding: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  background-color: blue;
+  height: 100vh;
+  width: 40%;
+  display: none;
+}
+
+.right {
+  background-color: #f5f2f0;
+  margin-top: 1%;
+  margin-right: 1%;
+  width: 100%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-icon {
+  padding: 5px;
+  font-size: 2.4rem;
+}
+nav ul {
+  display: none;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+  padding: 15px 25px;
+}
+.line {
+  height: 2px;
+  width: 200px;
+  background-color: black;
+  flex-grow: 1;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px red solid;
+}
+
+.title-left-upper {
+  font-family: "Merriweather", serif;
+  font-size: 7.2rem;
+  -webkit-text-stroke: 2px #333333;
+  color: transparent;
+}
+.title-left-lower {
+  font-family: "Merriweather", serif;
+  font-size: 7.2rem;
+  color: #333333;
+  margin-left: 25%;
+  border: 2px red solid;
+  width: auto;
+}
+.title-middle {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+  margin-left: 25%;
+}
+.title-middle p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  display: inline-block;
+  border: 2px red solid;
+}
+.title-right {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: space-between;
+  border: 2px red solid;
+  font-size: 2.4rem;
+  margin-right: 2.5rem;
+  width: 100%;
+}
+.btm-right img {
+  height: 200px;
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-color: white;
+    padding: 0;
+  }
+  .left {
+    display: block;
+  }
+  .right {
+    width: 60%;
+  }
+  .menu-icon {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  .title {
+    flex-direction: row;
+  }
+  .title-left-upper {
+    font-size: 11.2rem;
+    -webkit-text-stroke: 4px #333333;
+  }
+  .title-left-lower {
+    font-size: 11.2rem;
+  }
+  .title-middle {
+    margin-left: 0;
+  }
+  .title-right {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    background-color: red;
+  }
+
+  .left {
+    display: block;
+  }
+}
