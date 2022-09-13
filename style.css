@@ -132,7 +132,7 @@ nav ul li {
   width: 0.1rem;
   height: 4rem;
   background-color: black;
-  left: -1.2rem;
+  left: -1.4rem;
   bottom: -2rem;
 }
 
@@ -199,6 +199,9 @@ nav ul li {
   }
   .btm {
     flex-direction: row;
+  }
+  .btm-left ul li::before {
+    left: -1.2rem;
   }
   .title-right {
     flex-direction: column;
